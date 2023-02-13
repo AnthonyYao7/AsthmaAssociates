@@ -1,0 +1,166 @@
+/*GENERAL*/
+body
+{
+    margin: 0px;
+}
+
+p
+{
+    font-family: Montserrat;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*SECTIONS*/
+.sections
+{
+    display: grid;
+    grid-template-rows: 100px 3fr 1fr;
+}
+
+.banner
+{
+    background-color:rgb(9, 159, 200);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.right-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.top-right
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom-right
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.main-top /* text */
+{
+    margin-top: 100px;   
+    margin-bottom: 25px;
+}
+
+.main-mid /*namebox*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(9, 159, 200);
+}
+
+.footer-left /*HOURS*/
+{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.footer-right /*PHONE*/
+{
+    margin-top: 1%;
+    margin-right: 3%;
+    margin-bottom: 1%;
+}
+
+/*FEATURES*/
+.logo
+{
+    height: 80px;
+}
+
+.welcome
+{
+    font-weight: bold;
+    color: white;
+}
+
+.main-text
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-text2
+{
+    text-align: center;
+    font-size: 30px;
+}
+.physician
+{
+    color: white;
+}
+
+.namebox
+{
+    height: 50px;
+    width: 550px;
+}
+
+input, input::placeholder
+{
+    font-size: 40px;
+    font-family: Montserrat;
+}
+
+.submit
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-radius: 7px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 40px;
+    border: none;
+    background-color:rgb(9, 159, 200)
+}
+
+.hours, .phone
+{
+    font-weight: 500;
+    color: white;
+    margin-bottom: 7px;
+    
+}
+.hours-details, .phone-details
+{
+    color: white;
+   
+}
