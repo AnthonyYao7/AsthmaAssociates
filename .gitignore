@@ -1,6 +1,9 @@
 *
 !views/
 !views/admin.pug
+!views/404.pug
+!views/submitted.pug
+!views/waitingroom.pug
 !.gitignore
 !run.bat
 !views/login.pug
@@ -17,10 +20,6 @@
 !waitingroom/waitingroom.css
 !waitingroom/waitingroom.html
 !waitingroom/*
-!waitingroom/views/
-!waitingroom/views/404.pug
-!waitingroom/views/submitted.pug
-!waitingroom/views/waitingroom.pug
 !waitingroom/views/*
 !people_data/
 !credentials/

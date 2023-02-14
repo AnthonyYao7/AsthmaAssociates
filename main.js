@@ -87,9 +87,9 @@ function stringify_people(people)
 // user routes
 {
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'waitingroom/waitingroom.html'))
+        res.render("waitingroom")
     })
-
+55
     app.post('/checkin', (req, res) => {
         write_daily_people([req.body['name'].replaceAll(",", "")])
         let people = stringify_people(get_daily_people())
@@ -101,7 +101,7 @@ function stringify_people(people)
             clients[i].send(people)
         }
 
-        res.sendFile(path.join(__dirname, 'waitingroom/submitted.html'))
+        res.render("submitted")
     })
 }
 
@@ -125,7 +125,7 @@ app.get('/admin', (req, res) => {
         if (req.cookies["token"] === read_token())
             res.render('admin', {'authenticated': true})
         else
-            res.sendFile(path.join(__dirname, 'waitingroom/404.html'));
+            res.renderd("404")
     }
 })
 
@@ -241,7 +241,7 @@ app.ws("/people", (ws, req) => {
 
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, 'waitingroom/404.html'));
+    res.render("404")
 })
 
 app.listen(port, () => {
