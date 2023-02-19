@@ -5,8 +5,8 @@ function getCookie(name) {
 }
 
 const token = getCookie('token')
-
-const socket = new WebSocket("ws://localhost:8000/people")
+console.log(window.location.host)
+const socket = new WebSocket("ws://" + window.location.host + "/people")
 
 let recieved_people = new Set()
 let people_strings = []
