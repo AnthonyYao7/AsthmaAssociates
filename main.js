@@ -125,7 +125,7 @@ app.get('/admin', (req, res) => {
         if (req.cookies["token"] === read_token())
             res.render('admin', {'authenticated': true})
         else
-            res.renderd("404")
+            res.render("404")
     }
 })
 
